@@ -1,0 +1,30 @@
+{
+  "name": "postgres-api",
+  "version": "1.0.0",
+  "description": "Crud api using node js, express and postgres",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "js",
+    "node",
+    "express",
+    "js",
+    "postgres"
+  ],
+  "author": "Benjamin",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
