@@ -15,14 +15,14 @@ const port = process.env.PORT || 5020;
 const swaggerDefinition = {
     openapi: "3.0.0",
     info: {
-      title: "Zarttech API Documentation",
+      title: "CRUD operation",
       version: "1.0.0",
       description:
-        "API documentation for Zarttech Cohort 5 TypeScript application",
+        "API documentation for crud operation with Node, express, javaScript and postgresql database application",
     },
     servers: [
       {
-        url: "http://localhost:6080",
+        url: "http://locahost:6080",
         description: "Development server",
       },
     ],
