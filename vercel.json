@@ -5,16 +5,25 @@
         {
             "src": "./server.js",
             "use": "@vercel/node"
-        }
+        },
+        {
+            "src": "Src/Routes/**",
+            "use": "@vercel/static"
+          }
     ],
     "routes":[
         {
-            "src": "/(.*)",
+            "src":  "/((?!.*\\.\\w+$).*)",
             "dest": "./server.js",
             "methods": ["GET", "PUT", "POST", "DELETE"],
             "headers": {
                 "Access-Control-Allow-Origin": "*"
             }
-        }
+         
+        },
+        {
+            "src": "/(.+\\.[a-z]+)$",
+            "dest": "/public/$1"
+          }
     ]
 }
