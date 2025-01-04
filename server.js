@@ -91,4 +91,6 @@ app.use('/api/v1', updateUser);
 
 app.listen(port, () => {
     console.log(`server started running on port ${port}`);
-})
+});
+
+export default app;
