@@ -80,6 +80,9 @@ app.get('/api/get/:id', async(req, res) =>{
 });
 
 // swagger set up
+app.use((err, req, res, next) => {
+   console.error(err.stack); 
+   res.status(500).send('Something went wrong!'); });
 app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use('/api/v1', post);
 app.use('/api/v1', fetchUsers);
