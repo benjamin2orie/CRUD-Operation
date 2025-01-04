@@ -4,6 +4,9 @@
   "description": "Crud api using node js, express and postgres",
   "main": "server.js",
   "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node server.js",
